@@ -1,0 +1,16 @@
+.search-results  {
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff
+}
+.program-wrapper {
+	border-bottom: 1px solid #ccc;
+}
+.program-wrapper:last-child {
+	border-bottom: none
+}
+.program-wrapper .content {
+	padding: .5rem 1rem
+}
