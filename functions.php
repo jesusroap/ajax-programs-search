@@ -16,11 +16,8 @@ function draw_aps() {
 	require_once('form-search.php');
 
 }
-//add_shortcode('ajax-programs-search', 'draw_aps');
-
-add_action('loop_start', 'draw_aps');
-
-
+add_shortcode('ajax-programs-search', 'draw_aps');
+//add_filter('wp_footer', 'draw_aps');
 
 function find_program() {
 
