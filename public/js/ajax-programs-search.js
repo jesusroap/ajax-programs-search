@@ -13,7 +13,7 @@
 				},
 				beforeSend: function() {
 					if ( $('.search-results').length ) {
-						$('.search-results').html('<p>Buscando programas...</p>');
+						$('.search-results').html('<div class="program-wrapper"><div class="content"><p>Buscando programas...</p></div></div>');
 					} else {
 						$('#form-search-programs').append('<div class="search-results"><div class="program-wrapper"><div class="content"><p>Buscando programas...</p></div></div></div>');
 					}
@@ -31,6 +31,8 @@
 					
 				}
 			})
+		} else if(query.length < 3) {
+			$('.search-results').html('<div class="program-wrapper"><div class="content"><p>Buscando programas...</p></div></div>');
 		}
 
 	});
